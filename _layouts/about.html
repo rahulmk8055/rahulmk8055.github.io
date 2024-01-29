@@ -5,21 +5,6 @@ layout: default
     {{site.career-objective}}
 </div>
 
-{% if site.collection_option['experience']['visibility'] == true %}
-<div class="ap-line"></div>
-<!-- WORK EXPERIENCE -->
-<div class="ap-block">
-    <p class="ap-subtitle">{{site.collection_option['experience']['label']}}</p>
-    {% for experience in site.experience %}
-    <div class="ap-experience">
-        <p class="ap-experience-title">{{experience.title}}</p>
-        <p class="ap-experience-year">{{experience.duration}}</p>
-        <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
-    </div>
-    {% endfor %}
-</div>
-{% endif %}
-
 {% if site.collection_option['education']['visibility'] == true %}
 <div class="ap-line"></div>
 <!-- EDUCATION -->
@@ -37,15 +22,17 @@ layout: default
 </div>
 {% endif %}
 
-{% if site.collection_option['skills']['visibility'] == true %}
+{% if site.collection_option['experience']['visibility'] == true %}
 <div class="ap-line"></div>
-<!-- SKILLS -->
+<!-- WORK EXPERIENCE -->
 <div class="ap-block">
-    <p class="ap-subtitle">{{site.collection_option['skills']['label']}}</p>
-    {% for skill in site.skills %}
-    <div class="ap-skill">
-        <p class="ap-skill-category">{{skill.category}}</p>
-        <p class="ap-skill-details">{{skill.details}}</p>
+    <p class="ap-subtitle">{{site.collection_option['experience']['label']}}</p>
+    {% for experience in site.experience %}
+    <div class="ap-experience">
+        <p class="ap-experience-title">{{experience.title}}</p>
+        <p class="ap-experience-company">{{experience.company}}</p>
+        <p class="ap-experience-year">{{experience.duration}}</p>
+        <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
     </div>
     {% endfor %}
 </div>
@@ -71,6 +58,22 @@ layout: default
 
 </div>
 {% endif %}
+
+{% if site.collection_option['skills']['visibility'] == true %}
+<div class="ap-line"></div>
+<!-- SKILLS -->
+<div class="ap-block">
+    <p class="ap-subtitle">{{site.collection_option['skills']['label']}}</p>
+    {% for skill in site.skills %}
+    <div class="ap-skill">
+        <p class="ap-skill-category">{{skill.category}}</p>
+        <p class="ap-skill-details">{{skill.details}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+
 
 {% if site.collection_option['publications']['visibility'] == true %}
 <div class="ap-line"></div>

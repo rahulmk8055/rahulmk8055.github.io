@@ -12,23 +12,23 @@ paginate_path: "/blog/page:num/"
 social:
   email: 
     visibility: true
-    mail: contact@arnob.me
+    mail: musalay.r@northeastern.edu
   github: 
     visibility: true
     handle: arnobk
   linkedin: 
     visibility: true
-    handle: arnobkarmokar
+    handle: rahul-musalay-120312139
   twitter: 
     visibility: true
     handle: arnobdotme
 
 # Collections
 collections:
-  experience:
+  education:
     output: false
     sort_by: order
-  education:
+  experience:
     output: false
     sort_by: order
   projects:
@@ -52,11 +52,11 @@ collections:
 
 # About Page Options
 collection_option:
-  experience: 
-    label: Experience
-    visibility: true
   education: 
     label: Education
+    visibility: true
+  experience: 
+    label: Experience
     visibility: true
   projects: 
     label: Projects
