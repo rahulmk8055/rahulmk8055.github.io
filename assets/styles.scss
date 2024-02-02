@@ -32,6 +32,7 @@ a:hover {
     height: 160px;
     width: 160px;
     border-radius: 30px;
+    
 }
 
 .ap-title {
@@ -79,8 +80,8 @@ a:hover {
 
 .ap-line {
     height: 1px;
-    margin: 36px 0;
-    background-color: #eee;
+    margin: 15px 0;
+    background-color: #000000;
 }
 
 .ap-content {
@@ -107,9 +108,9 @@ a:hover {
 .ap-subtitle {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 25px;
     color: #555555;
-
+    text-decoration: underline;
 }
 
 .ap-experience {
@@ -574,3 +575,16 @@ a:hover {
         margin-top: 32px;
     }
 }
+
+html {
+    filter: invert(100%) hue-rotate(180deg);
+    
+  }
+  
+img {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+// body {
+//     background-color: #979797; /* Replace #f0f0f0 with whatever color you prefer */
+// }
